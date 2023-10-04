@@ -100,11 +100,14 @@
                     <img src="images/facebook.png" style="position: absolute; width: 5vw; left: 7vw; top: 8.4vw;">
                     <img src="images/linkedin.png" style="position: absolute; width: 5vw; left: 16.4vw; top: 8.4vw;">
                     <img src="images/instagram.png" style="position: absolute; width: 5vw; left: 25.8vw; top: 8.4vw;">
-                    <img src="images/twitter.png" style="position: absolute; width: 5vw; left: 35.2vw; top: 8.4vw;">
+                    <a id="twitter_share" href="mailto:?subject=I wanted you to see this site&amp;body=Check out this site http://www.website.com."
+                        title="Share by Email">
+                        <img  src="images/twitter.png" style="position: absolute; width: 5vw; left: 35.2vw; top: 8.4vw;">
+                    </a>
                     <a id="mail_share" href="mailto:?subject=I wanted you to see this site&amp;body=Check out this site http://www.website.com."
                         title="Share by Email">
-                    <img src="images/gmail.png" style="position: absolute; width: 5vw; left: 44.6vw; top: 8.4vw;">
-                </a>
+                        <img src="images/gmail.png" style="position: absolute; width: 5vw; left: 44.6vw; top: 8.4vw;">
+                    </a>
                 </div>
 
                 <p style="position: absolute; left: 6vw; top: 15.5vw; font-family: Roboto; font-size: 1.2vw; font-weight: bold; letter-spacing: 0.08vw; color: grey;">
@@ -120,6 +123,7 @@
         <script>
             document.getElementById("buttonnput").placeholder = window.location.href;
             document.getElementById("mail_share").href='mailto:?subject=I wanted you to see this site&body=Check out this site '+window.location.href+' .';
+            document.getElementById("twitter_share").href='http://twitter.com/share?text=View my climate change scenario&url='+window.location.href+'&hashtags=my2050,kcert,climatechange';
             function myFunction() {
                 navigator.clipboard.writeText(window.location.href);
                 alert("Link Copied");
